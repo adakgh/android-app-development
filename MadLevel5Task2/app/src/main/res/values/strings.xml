@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Game Backlog</string>
+    <string name="app_name2">Add Game</string>
+    <string name="action_settings">Delete all games</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Game Fragment</string>
+    <string name="second_fragment_label">AddGame Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="gameTitle"></string>
+    <string name="release">Release: %s</string>
+    <string name="platform"></string>
+
+    <string name="gameTitleHint">Title</string>
+    <string name="releaseHintDay">Day</string>
+    <string name="releaseHintMonth">Month</string>
+    <string name="releaseHintYear">Year</string>
+    <string name="platformHint">Platform</string>
+
+    <string name="deleted_game">Successfully deleted game</string>
+    <string name="deleted_games">Successfully deleted all games</string>
+</resources>

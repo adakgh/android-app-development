@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/conjunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/title"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/column1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/a"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/conjunction"
+        app:layout_constraintTop_toBottomOf="@+id/conjunction" />
+
+    <TextView
+        android:id="@+id/column2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/b"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conjunction" />
+
+    <TextView
+        android:id="@+id/column3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/ab"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conjunction" />
+
+
+    <TextView
+        android:id="@+id/row11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/trueConjunction"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/conjunction"
+        app:layout_constraintTop_toBottomOf="@+id/column1" />
+
+    <TextView
+        android:id="@+id/row12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trueConjunction"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/row11" />
+
+    <EditText
+        android:id="@+id/row13"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:digits="FT"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="@+id/column3"
+        app:layout_constraintStart_toStartOf="@+id/column3"
+        app:layout_constraintTop_toBottomOf="@+id/column3" />
+
+    <TextView
+        android:id="@+id/row21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/trueConjunction"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/conjunction"
+        app:layout_constraintTop_toBottomOf="@+id/row11" />
+
+    <TextView
+        android:id="@+id/row22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/falseConjunction"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/row21" />
+
+    <EditText
+        android:id="@+id/row23"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:digits="FT"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="@+id/row13"
+        app:layout_constraintStart_toStartOf="@+id/row13"
+        app:layout_constraintTop_toBottomOf="@+id/row13" />
+
+
+    <TextView
+        android:id="@+id/row31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/falseConjunction"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/conjunction"
+        app:layout_constraintTop_toBottomOf="@+id/row21" />
+
+    <TextView
+        android:id="@+id/row32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trueConjunction"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/row31" />
+
+    <EditText
+        android:id="@+id/row33"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:digits="FT"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="@+id/row23"
+        app:layout_constraintStart_toStartOf="@+id/row23"
+        app:layout_constraintTop_toBottomOf="@+id/row23" />
+
+
+    <TextView
+        android:id="@+id/row41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/falseConjunction"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/conjunction"
+        app:layout_constraintTop_toBottomOf="@+id/row31" />
+
+    <TextView
+        android:id="@+id/row42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/falseConjunction"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/row41" />
+
+    <EditText
+        android:id="@+id/row43"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:digits="FT"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="@+id/row33"
+        app:layout_constraintStart_toStartOf="@+id/row33"
+        app:layout_constraintTop_toBottomOf="@+id/row33" />
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/gray"
+        android:hint="@string/submit"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
